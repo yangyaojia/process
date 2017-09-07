@@ -1,0 +1,316 @@
+\documentclass[landscape]{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{fancyvrb}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[affil-it]{authblk}
+\usepackage[top = 1.0in, bottom = 1.1in, left = 0.3in, right = 1.2in]{geometry}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{wallpaper}
+
+\newcommand\spc{\vspace{6pt}}
+\newcommand{\floor}[1]{\lfloor {#1} \rfloor}
+\newcommand{\ceil}[1]{\lceil {#1} \rceil}
+\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+\date{Latest Update : \today}
+%\date{\yestoday}
+\title{Process table}
+\author{$\textcolor[RGB]{0,192,192}{yyj}$}
+\CenterWallPaper{1.5}{pc.jpg}
+\begin{document}
+\maketitle
+\color[RGB]{74,74,74}
+
+\begin{longtable}{cccccclll}
+  \hline
+  Date & Name & Source & First submitted & Status & Algorithm & Remark\\
+  \hline
+  Day1 & codeforces413E Maze 2D & CF413E & \color{red} WA & \color{green} AC & 线段树 & 上课题目\\
+  \hline
+  Day1 & codeforces718C Sasha and Array & CF718C & \color{red} WA & \color{green} AC & 线段树 & 上课题目\\
+  \hline
+  Day1 & 序列2 & kth & \color{red} WA & \color{green} AC & 线段树||树状数组 & 上课题目\\
+  \hline
+  Day1 & 序列1 & sequence & \color{green} AC & \color{green} AC & 线段树||树状数组 & 上课题目\\
+  \hline
+  Day2 & K大数查询 & BZOJ3110 & \color{blue} MLE & -- & 树套树 & 自己打了一遍挂了\\
+  \hline
+  Day3 & 研究性学习 & ------ & -- & -- & -- & 无\\
+  \hline
+  Day4 & K大数查询 & BZOJ3110 & \color{blue} MLE & \color{green} AC & 树套树 & 调了将经一上午才改出来\\
+  \hline
+  Day4 & Gorgeous Sequence & HDU5306 & \color{blue} TLE & \color{green} AC  & 线段树 & \tabincell{l}{OJ上的编译器选错了\\导致一直TLE}\\
+  \hline
+  Day5 & [ZJOI2007] 捉迷藏 & BZOJ1095 & \color{green} AC & \color{green} AC & 线段树 &\tabincell{l}{很难的一道题，\\看了题解之后打的一遍过}\\
+  \hline
+  Day5 & [SHOI2017]相逢是问候 & BZOJ4869 & \color{green} AC & \color{green} AC & 线段树+欧拉定理 & 综合题，很难\\
+  \hline
+  Day5 & Rikka with Phi & HDU5634 & \color{red} WA & \color{green} AC & 线段树 &之前做过的套路题\\
+  \hline
+  Day6 & [Poi2011]Tree Rotations & BZOJ2212 & \color{blue} MLE & \color{green} AC & 线段树 &线段树合并\\
+  \hline
+  Day6 & [HNOI2012]永无乡 & BZOJ2733 & \color{red} WA & \color{green} AC & 线段树 & 线段树合并,水题\\
+  \hline
+  Day6 & [SDOI2014]旅行 & BZOJ3531 & \color{green} AC & \color{green} AC & 线段树+动态开点 & 一遍过\\
+  \hline
+  Day6 & [NOIP2016]天天爱跑步 & BZOJ4719 & \color{green} AC & \color{green} AC & 线段树+LCA &\tabincell{l}{线段树合并，\\问了pyh才会做，不过好难}\\
+  \hline
+  Day7 & Kth number & HDU2665 & \color{blue} MLE & \color{green}AC  & 主席树 &莫名MLE\\
+  \hline
+  Day7 & Dynamic Ranking & BZOJ1901 & \color{purple} RE & \color{green} AC & 主席树 &\tabincell{l}{序列带修改区间第k小，\\数组开小MLE}\\
+  \hline
+  Day8 & [CTSC2008]网络管理Network & BZOJ1146 & \color{purple} RE & \color{green} AC & 主席树+BIT树 &树上带修改区间第k小，打了一天\\
+  \hline
+  Day9 & [HNOI2016]序列 & BZOJ4540 & \color{red} WA 0 & \color{green} AC & 线段树+扫描线 &将子序列问题转换为平面矩形问题\\
+  \hline
+  Day10 & [HNOI2017]影魔 & BZOJ4826 & \color{purple} RE & \color{green} AC & 线段树+扫描线 &同序列，RE是因为数组开小了\\
+  \hline
+  Day10 & [SDOI2011]染色 & BZOJ2243 & \color{red} WA 0 & \color{green} AC & 树剖+线段树 & \\
+  \hline
+  Day10 & [HAOI2015]树上操作 & BZOJ4034 & \color{red} WA 0 & \color{green} AC & 树剖+线段树||线段树 & \\
+  \hline
+  Day10 & [NOI2015]软件包管理器 & BZOJ4196 & \color{red} WA 50 & \color{green} AC & 树剖+线段树 & 树剖时维护一个东西没搞好\\
+  \hline
+  Day10 & [SCOI2015]情报传递 & BZOJ4448 & \color{red} WA 20 & \color{green} AC & \tabincell{l}{(离线)树剖+主席树\\(在线)主席树+BIT树} & 打的是离线\\
+  \hline
+  Day11 & [ZJOI2010]base 基站选址 & BZOJ1835 & \color{red} WA 0 & \color{green} AC & \tabincell{l}{线段树+DP} & 有一定思维难度\\
+  \hline
+  Day11 & [Spoj10628]Count on a tree & BZOJ1835 & \color{red} WA 0 & \color{green} AC & \tabincell{l}{主席树} & 树上不修改主席树\\
+  \hline
+  Day11 & Nim & BZOJ2819 & \color{red} WA 30 & \color{green} AC & \tabincell{l}{树剖+线段树} & \tabincell{l}{如果
+  $ x_1 \veebar x_2 \veebar x_3...\veebar x_n=0  $,\\则后手必胜}\\
+  \hline
+  Day11 & [LNOI2014]LCA & BZOJ3626 & \color{red} WA  & \color{green} AC & \tabincell{l}{树剖+线段树+离线} & 好题\\
+  \hline
+  Day11 & [BJOI2015]骑士的旅行 & BZOJ4336 & \color{red} WA  & \color{green} AC & \tabincell{l}{树套set} & 因为合并的K小，可以暴力合并\\
+  \hline
+  Day12 & [Haoi2016]食物链 & BZOJ4562 & \color{red} WA 20  & \color{green} AC & 拓扑+DP & \tabincell{l}{即求所有入度为0的点到\\出度为0的点的路径条数}\\
+  \hline
+  Day12 & [JSOI2008]Blue Mary开公司 & BZOJ1568 & \color{green} AC  & \color{green} AC & 拓扑+DP & 李超线段树\\
+  \hline
+  Day12 & 遥远的国度 & BZOJ3083 & \color{green} AC  & \color{green} AC & 树链剖分 & 分类讨论 \\
+  \hline
+  Day12 & segement & BZOJ3165 & \color{green} AC  & \color{green} AC & 线段树 & 李超线段树\\
+  \hline
+  Day13 & 树的统计Count & BZOJ1036 & \color{green} AC  & \color{green} AC & 动态树 & LCT\\
+  \hline
+  Day13 & [HNOI2010]Bounce 弹飞绵羊  & BZOJ2002 & \color{green} AC  & \color{green} AC & 动态树 & LCT\\
+  \hline
+  Day13 &  Tree  & BZOJ3282 & \color{red} WA  & \color{green} AC & 动态树 & LCT\\
+  \hline
+  Day13 &  网络通信  & BZOJ3651 & \color{green} AC  & \color{green} AC & 动态树+map & LCT\\
+  \hline
+  Day14 &  水管局长数据加强版  & BZOJ2594 & \color{purple} RE  & \color{green} AC & LCT & \tabincell{l}{边转换成一个点，倒序加边，\\维护最小生成树。}\\
+  \hline
+  Day14 &  网络  & BZOJ2816 & \color{green} AC  & \color{green} AC & 动态树+map & LCT\\
+  \hline
+  Day14 &  极地旅行社  & BZOJ3651 & \color{red} WA  & \color{green} AC & 动态树 & LCT维护链和\\
+  \hline
+  Day14 &  长跑  & BZOJ2959 & \color{green} AC  & \color{green} AC & 动态树 & 缩点+LCT\\
+  \hline
+  Day14 &  魔法森林  & BZOJ3669 & \color{green} AC  & \color{green} AC & 动态树 & 将A排序，边化点维护最大B的树\\
+  \hline
+  Day15 &  (考试)T1  & test0715 & \color{red} WA20  & \color{green} AC & DP & 排序后dp，判断是否可行。\\
+  \hline
+  Day15 &  (考试)T2  & test0715 & \color{purple} RE  & \color{green} AC & 主席树+BIT & 同网络管理Network\\
+  \hline
+  Day18 &  [BJOI2014]大融合  & BZOJ4530 & \color{red} WA  & \color{green} AC & 动态树 & LCT维护子树信息\\
+  \hline
+  Day18 &  重组病毒  & BZOJ3779 & \color{red} WA  & \color{green} AC & 动态树 & \tabincell{l}{可以用纯LCT维护子树\\信息，但我没搞懂\\还可以LCT加上线段树维护\\(换根分量讨论)}\\
+  \hline
+  Day19 &  [Sdoi2017]树点涂色  & BZOJ3779 & \color{red} WA  & \color{green} AC & 动态树 & \tabincell{l}{上一题的弱化版，\\我用的是线段树+lct，\\注意线段树的操作}\\
+  \hline
+  Day19 & 「雅礼集训 2017 Day5」远行 & LOJ6038 & \color{blue} TLE20  & \color{green} AC & 动态树 & \tabincell{l}{LCT维护直径，新树的直径一定\\是两旧树的直径的四个点的两个}\\
+  \hline
+  Day20 &  二分图  & BZOJ4025 & \color{blue} TLE  & \color{green} AC & 动态树 &\tabincell{l}{点代替边，离线，LCT维护一个边\\消失时间的最大生成树，来维护\\一个动态图。二分图判断是\\看有没有奇数环存在,\\因为有自环一直TLE} \\
+  \hline
+  Day20 & [Wc]Dface双面棋盘  & BZOJ1453 & \color{green} AC & \color{green} AC & 动态树 &	 \tabincell{l}{抽象成一个动态图，\\维护边消失时间\\的最大生成树。}\\
+  \hline
+  Day21 & [CQOI2011]动态逆序对 & BZOJ3295 & \color{red} WA & \color{green} AC & 主席树 &	 \tabincell{l}{求一个数前面比他大，后面比他小的数。}\\
+  \hline
+  Day22 & middle & BZOJ2653 & \color{red} WA & \color{green} AC & 主席树+二分 &	 \tabincell{l}{巧妙的方法，\\二分时通过区间大和来判断}\\  
+  \hline
+  Day22 & 花神的嘲讽计划Ⅰ & BZOJ3207 & \color{red} WA & \color{green} AC & 主席树+Hash &	 \tabincell{l}{主席树+hash}\\  
+  \hline
+  Day23 & \tabincell{l}{Codechef MARCH14 \\GERALD07加强版} & BZOJ3514 & \color{red} WA & \color{green} AC & 动态树+主席树 &	 \tabincell{l}{维护一颗加边时间最大生成树，\\得到一个每个边代替某边的序列，\\主席树统计区间内用贡献的边}\\  
+  \hline
+  Day23 & 可持久化并查集 & BZOJ3674 & \color{red} WA & \color{green} AC & 主席树 &	 \tabincell{l}{主席树维护fa数组}\\  
+  \hline
+  Day23 & [CQOI2015]任务查询系统 & BZOJ3932 & \color{blue} TLE & \color{green} AC & 主席树 &	 \tabincell{l}{差分思想}\\  
+  \hline
+  Day24 & [SCOI2016]美味 & BZOJ4571 & \color{red} WA & \color{green} AC & 主席树+二分 &	 \tabincell{l}{按位二分答案，主席树辅助}\\  
+  \hline
+  Day24 & 七彩树 & BZOJ4771 & \color{red} WA & \color{green} AC & 主席树+set &	 \tabincell{l}{按深度建主席树维护贡献。}\\  
+  \hline
+  Day25 & 小奇的糖果 & BZOJ4548 & \color{red} WA & \color{green} AC & 主席树 &	 \tabincell{l}{链表记录按x排序的同色点。\\按高度排序点去除点，\\求矩形内点和。}\\  
+  \hline
+  Day39 & [HNOI2009]梦幻布丁 & BZOJ1483 & \color{red} WA & \color{green} AC & treap||set &	 \tabincell{l}{启发式合并更新贡献。}\\  
+  \hline
+  Day39 & [JLOI2011]不重复数字 & BZOJ2761 & \color{green} AC & \color{green} AC & treap||sort &	 \tabincell{l}{去重}\\  
+  \hline
+  Day40 & 城市旅行 & BZOJ3091 & \color{red} WA & \color{green} AC & LCT+数学 &	 \tabincell{l}{对所有路径和分析之后，\\再splay上维护一个\\路径前缀|后缀，细节多。}\\  
+  \hline
+  Day40 & [2009国家集训队]小Z的袜子 & BZOJ2038 & \color{red} WA & \color{green} AC & 莫队 &	 \tabincell{l}{莫队经典题}\\  
+  \hline
+  Day41 & [Usaco2008Oct]灌水 & BZOJ1601 & \color{red} WA & \color{green} AC & 最小生成树 &	 \tabincell{l}{建一个新点，\\代表建筑水塔的代价，\\求最小生成树}\\  
+  \hline
+  Day41 & [JSOI2010]Group部落划分 & BZOJ1821 & \color{purple} RE & \color{green} AC & 最小生成树 &	 \tabincell{l}{最小生成树地k小边}\\  
+  \hline
+  Day41 & Buy or Build & UVa1151 & \color{red} PE & \color{green} AC & 最小生成树 &	 \tabincell{l}{最小生成树地+枚举}\\  
+  \hline
+  Day41 & Slim Span  & UVa1395 & \color{red} WA & \color{green} AC & 最小生成树 &	 \tabincell{l}{最小生成树}\\  
+  \hline
+  Day41 & Arctic Network  & UVa10369 & \color{green} AC & \color{green} AC & 最小生成树 &	 \tabincell{l}{最小生成树}\\  
+  \hline
+  Day41 & Stream My Contest  & UVa11865 & \color{red} WA & \color{green} AC & \color{red} 最小树形图(没掌握) &	 \tabincell{l}{二分答案，最小树形图检验}\\  
+  \hline
+  Day42 & [JSOI2008]最小生成树计数  & BZOJ1016 & \color{red} WA & \color{green} AC &  最小生成树+暴搜 &	 \tabincell{l}{先更具最小生成树的定理，\\不同的最小生成\\树所用边的权值，\\个数与同权值边链接\\的联通块是一样的。\\用暴搜来确定某一权\\值边的方案，乘起来}\\  
+  \hline
+  Day42 & Object Clustering  & POJ3241 & \color{green} AC & \color{green} AC & 曼哈顿最小生成树 &	 \tabincell{l}{曼哈顿最小生成树第k大边}\\  
+  \hline
+  Day42 & \tabincell{l}{[USACO08OPEN]\\Cow Neighborhoods}  & BZOJ1604 & \color{green} AC & \color{green} AC & 曼哈顿最小生成树+带权并查集 &	 \tabincell{l}{构造出曼哈顿最小生成树，\\并查集维护集合大小}\\  
+  \hline
+  Day43 & 最大流模板  & - & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{网络流最大流}\\  
+  \hline
+  Day43 & [01]飞行员配对方案问题  & - & \color{green} AC & \color{green} AC & 最大流二分图匹配 &	 \tabincell{l}{网络流二分图匹配模型}\\  
+  \hline
+  Day43 & [USACO4.2]草地排水  & - & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{网络流}\\  
+  \hline
+  Day44 & [03]最小路径覆盖问题  & - & \color{red} WA & \color{green} AC & 最大流二分图匹配 &	 \tabincell{l}{二分图匹配每个点下一个点，\\最大流保证匹配最多，\\路径越少}\\  
+  \hline
+  Day44 & [04]魔术球  & - & \color{purple} RE & \color{green} AC & 二分+二分图匹配 &	 \tabincell{l}{二分答案，用最少路径覆盖检查}\\  
+  \hline
+  Day44 & [05]圆桌问题  & - & \color{green} AC & \color{green} AC & 二分图多重匹配 &	 \tabincell{l}{二分图多重匹配，判断是否为完美匹配}\\  
+  \hline
+  Day44 & [07]试题库问题  & - & \color{green} AC & \color{green} AC & 二分图多重匹配 &	 \tabincell{l}{二分图匹配}\\  
+  \hline
+  Day45 & [02]太空飞行计划问题  & - & \color{green} AC & \color{green} AC & 二分图+最小割 &	 \tabincell{l}{最大权闭合图，建成二分图，\\仪器与代价连线，\\答案为总利益减最小割}\\  
+  \hline
+  Day45 & [09]方格取数问题  & - & \color{green} AC & \color{green} AC & 二分图点权最大独立集 &	 \tabincell{l}{二分建图，点与相邻点连边，求最小割。}\\  
+  \hline
+  Day46 & [10]餐巾计划问题  & - & \color{red} WA & \color{green} AC & 最小费用最大流 &	 \tabincell{l}{巧妙建图，将一天分为前后两个点，\\根据条件与代价连边}\\  
+  \hline
+  Day46 & [13]星际转移问题  & - & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{将一个站按天新建，根据条件连边。}\\  
+  \hline
+  Day46 & [24]骑士共存问题  & - & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{二分图，最小割}\\  
+  \hline
+  Day47 & [11]航空路线问题  & - & \color{red} WA & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{将城市拆点,连流量与权值位1的边，\\求最大费用流}\\  
+  \hline
+  Day47 & [16]数字梯形问题  & - & \color{red} WA & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{将点拆点，能走到的连边，\\先是点内边与店外边流量为1,\\再点内流量为无穷，\\再所有边为无穷}\\  
+  \hline
+  Day47 & [17]运输问题  & - & \color{red} WA & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{按条件建二分图，求最小费用}\\  
+  \hline
+  Day47 & [18]分配问题   & - & \color{green} AC & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{同运输问题}\\  
+  \hline
+  Day47 & [19]负载平衡问题  & - & \color{red} WA & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{按条件建二分图，求最小费用}\\  
+  \hline
+  Day47 & [20]深海机器人问题  & - & \color{red} WA & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{拆点建图，\\点内建一条流量权值为1的边，\\再建0权值，无费用的边}\\  
+  \hline
+  Day48 & [23]火星探险问题  & - & \color{red} WA & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{同 深海机器人问题 。}\\  
+  \hline
+  Day48 & [21]最长k可重区间集问题  & - & \color{red} WA & \color{green} AC & 最大费用最大流 &	 \tabincell{l}{线段端点离散化，\\对于每个点与后一个点连边。\\线段左右端点连边，流量与费用均为1。\\注意线段是左闭右开。\\k为起点与终点的流量。}\\  
+  \hline
+  Day48 & [22]最长k可重线段集问题  & - & \color{red} WA & \color{red} WA & 最大费用最大流 &	 \tabincell{l}{同 最长k可重区间集问题 ，\\怀疑数据有误}\\  
+  \hline
+  Day48 & [12]软件补丁问题  & - & \color{blue} TLE & \color{green} AC & 最短路+状态压缩 &	 \tabincell{l}{题目描述有误，二进制状压。\\但不要把边建出来，会超时。\\临时判断是否可走}\\  
+  \hline
+  Day49 & [14]孤岛营救问题  & - & \color{red} WA & \color{green} AC & 最短路+状态压缩 &	 \tabincell{l}{状态压缩，按状态分层建图，跑最短路。\\注意一个位置可能右多把钥匙。}\\  
+  \hline
+  Day49 & [15]汽车加油行驶问题  & - & \color{green} AC & \color{green} AC & 最短路+状态压缩 &	 \tabincell{l}{按储油量分层建图，每一个位置拆点。\\有加油站则当前点的上点跨层\\连到蛮油层的相同位置的下点，\\费由为加油费用。\\如果没有，则前点的上点\\连到前点的下点，\\再连一条跨层费用位建加\\油费用加加油费用的边。}\\  
+  \hline
+  Day49 & [BeiJing2006]狼抓兔子 & BZOJ1001 & \color{purple} RE & \color{green} AC & 最小割 &	 \tabincell{l}{最小割裸题，注意要打多路增广}\\  
+  \hline
+  Day49 & [SCOI2007]蜥蜴 & BZOJ1066 & \color{green} AC & \color{green} AC & 最大流 &	 \tabincell{l}{拆点}\\  
+  \hline
+  Day50 & [SCOI2007]修车 & BZOJ1070 & \color{red} WA & \color{green} AC & 最小费用最大流 &	 \tabincell{l}{分层}\\  
+  \hline
+  Day50 & [ZJOI2009]狼和羊的故事 & BZOJ1412 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{二分图最大流}\\  
+  \hline
+  Day50 & [NOI2006]最大获利 & BZOJ1497 & \color{green} AC & \color{green} AC & 最小割 &	 \tabincell{l}{最大权闭合子图}\\  
+  \hline
+  Day50 & [SDOI2010]星际竞速 & BZOJ1927 & \color{green} AC & \color{green} AC & 费用流 &	 \tabincell{l}{没做出来,有代表性的题目。\\拆点，奇妙的建图。\\二分图匹配怎么到达}\\  
+  \hline
+  Day51 & [SHOI2007]Vote 善意的投票  & BZOJ1934 & \color{green} AC & \color{green} AC & 最小割 &	 \tabincell{l}{典型模型，朋友之间连双向边，\\同意的连s，不同意的连t,\\最小割即为答案。}\\  
+  \hline
+  Day51 & [2009国家集训队]employ人员雇佣 & BZOJ2039 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{每个点向集合连边，\\两点间连一条2×E(i,j)，\\代表两者不同集合时的损失}\\  
+  \hline
+  Day52 & [ZJOI2011]最小割 & BZOJ2229 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{最小割树，可以证明一个图的\\不同最小割最多n-1个，\\用分治求出最小割树。}\\  
+  \hline
+  Day52 & [CQOI2016]不同的最小割  & BZOJ4519 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{同上题}\\  
+  \hline
+  Day52 & [HAOI2010]订货 & BZOJ2424 & \color{green} AC & \color{green} AC & 费用流 &	 \tabincell{l}{网络流线性规划}\\  
+  \hline
+  Day52 & [SHOI2010]最小生成树 & BZOJ2521 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{让某一边在生成树中，\\必须让比其边权小的边\\不连通这个边的两点，\\用最小割来求。}\\  
+  \hline
+  Day52 & 最小生成树 & BZOJ2561 & \color{green} AC & \color{green} AC & 最小割 &	 \tabincell{l}{同上}\\  
+  \hline
+  Day52 & [SCOI2012]奇怪的游戏 & BZOJ2756 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{好题，将棋盘黑白染色，\\每次修改必改一黑一白，\\分情况进行判断，\\二分+网络流判断可行(满流)}\\  
+  \hline
+  Day53 & 圈地计划 & BZOJ2132 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{与典型模型相反，\\两点为统一集合得多割一条边。\\将点黑白染色，\\黑点一白点连向s,t的边意义不同，\\就转换为不同集合多割边}\\  
+  \hline
+  Day53 & [HNOI2013]切糕 & BZOJ3144 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{每一跟竖着的点头连s,尾连t。\\再加上距离限制，\\从靠近t的那边连一条靠近s\\(保证对应方案)对于每一个R>=k>D，\\连高度k,k-d,，的边做距离限制。}\\  
+  \hline
+  Day53 & 文理分科 & BZOJ3894 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{又一个典型模型，\\对于每个点向s,t,连边,\\再加上两个点。\\分别一端与s,t向连，\\边权为same，\\另一端连向与这个点相邻的点}\\  
+  \hline
+  Day53 & [SDOI2015]星际战争 & BZOJ3993 & \color{green} AC & \color{green} AC & 最大流+二分 &	 \tabincell{l}{二分答案，\\判断是否满流。}\\  
+  \hline
+  Day53 & [TJOI2015]线性代数 & BZOJ3996 & \color{red} WA & \color{green} AC & 最小割 &	 \tabincell{l}{将式子化开，变成一个\\类似BZOJ文理分科的模型。}\\  
+  \hline
+  Day53 & [SDOI2016]数字配对 & BZOJ4514 & \color{red} WA & \color{green} AC & 费用流 &	 \tabincell{l}{二分图多重匹配，\\如果费用<0立马结束增广。}\\  
+  \hline
+  Day54 & [CQOI2015]网络吞吐量 & BZOJ3931 & \color{blue} TLE & \color{green} AC & 最大流 &	 \tabincell{l}{先跑出最短路的图\\(如果每次增广跑会超时)，\\再跑最大流。}\\  
+  \hline
+  Day54 & [SCOI2015]小凸玩矩阵 & BZOJ4443 & \color{blue} TLE & \color{green} AC & 二分+二分图匹配 &	 \tabincell{l}{二分x，最大流判断小于等于x\\的数能否取出n-k+1个数，\\建图是行与列进行匹配。\\一开始建复杂了结果T了。}\\  
+  \hline
+  Day54 & [SHOI2017]寿司餐厅 & BZOJ4873 & \color{red} WA & \color{green} AC & 最大权闭合子图 &	 \tabincell{l}{可以把问题变成最大权闭合子图，\\对于点[i,j] (j>i)，点权为d[i][j]，\\并向点[i,j-1]和点[i+1,j]连边。\\对于点[i,i]，点权为d[i][i]-a[i]，\\即收益减去费用，并向编号a[i]连边。\\对于编号p，点权为-m*p*p。}\\  
+  \hline
+  Day55 & [Noi2012]美食节 & BZOJ2879 & \color{blue} TLE & \color{green} AC & 费用流 &	 \tabincell{l}{和 修车 比较相像。\\分层建图，但由于边数较大，\\所以得动态开边。}\\  
+  \hline
+  Day55 & [NOI2009]植物大战僵尸 & BZOJ1565 & \color{red} WA80 & \color{green} AC & 最大权闭合子图+拓扑 &	 \tabincell{l}{可以把保护这\\一条件变成闭合子图，\\每个格子可以保护其左边的。\\注意其中有环，\\将环与其间接相连的点\\用拓扑跑出来，不能取。}\\  
+  \hline
+  Day55 & [AHOI2009]Mincut最小割 & BZOJ1797 & \color{red} WA & \color{green} AC & 最小割+tarjan &	 \tabincell{l}{先跑一边最大流，\\对残余网络求强联通分量，\\对于每一条满流的边，\\如果连接两不同分量，\\则有肯能为割边，如果两分量\\分别为S集与T集，则肯定为割边}\\  
+  \hline
+  Day55 & 小M的作物 & BZOJ3438 & \color{green} AC & \color{green} AC & 最小割 &	 \tabincell{l}{类似 文理分科 的模型}\\  
+  \hline
+  Day55 & 千钧一发 & BZOJ3158 & \color{green} AC & \color{green} AC & 最小割 &	 \tabincell{l}{二分图最大独立集}\\  
+  \hline
+  Day55 & [NOI2008]志愿者招募 & BZOJ1061 & \color{red} WA & \color{green} AC & 费用流 &	 \tabincell{l}{网络流与线性规划，\\将每一天列一个等式，\\利用流量守恒来解决。}\\  
+  \hline
+  Day56 & [CTSC2008]祭祀river & BZOJ1143 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{二分图匹配}\\  
+  \hline
+  Day56 & [JSOI2008]Blue Mary的旅行  & BZOJ1570 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{动态加边}\\  
+  \hline
+  Day56 & WC2007 剪刀石头布  & BZOJ2597 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{考虑补集+特殊建边}\\  
+  \hline
+  Day56 & A+B Problem  & BZOJ3218 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{主席树+最小割}\\  
+  \hline
+  Day57 & [NOI2008]志愿者招募  & BZOJ1061 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{费用流跑线性规划}\\  
+  \hline
+  Day57 & [SDOI2011]保密  & BZOJ2285 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{二分+最大流}\\  
+  \hline
+  Day58 & [ZJOI2013]防守战线  & BZOJ3112 & \color{red} WA & \color{green} AC & 费用流 &	 \tabincell{l}{对偶图+费用流线性规划}\\  
+  \hline
+  Day58 & [CQOI2014]危桥  & BZOJ3504 & \color{red} WA & \color{green} AC & 最大流 &	 \tabincell{l}{求多条路径}\\  
+  \hline
+  Day58 & [SHOI2003]pacman吃豆豆  & BZOJ1930 & \color{red} WA & \color{green} AC & 费用流 &	 \tabincell{l}{根据图的性质优化建边}\\  
+  \hline
+  
+  
+  
+  
+  
+\end{longtable}
+
+\end{document}
